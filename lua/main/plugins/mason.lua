@@ -12,6 +12,7 @@ return {
 			"pyright",
 			"prettier",
 			"prettierd",
+            "gopls",
 		},
 	},
 	config = true,
