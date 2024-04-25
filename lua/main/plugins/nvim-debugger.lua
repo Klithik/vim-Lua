@@ -4,6 +4,7 @@ return {
 
 		"rcarriga/nvim-dap-ui",
 		"mfussenegger/nvim-dap",
+        "nvim-neotest/nvim-nio",
 	},
 	ft = { "python" },
 	config = function(_, opts)
