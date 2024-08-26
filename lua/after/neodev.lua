@@ -58,6 +58,20 @@ require("lspconfig").biome.setup({
 	},
 })
 
+require("lspconfig").clangd.setup({
+    on_attach = on_attach,
+    settings = {
+        filetypes = {
+            "c",
+            "cpp",
+            "objc",
+            "objcpp",
+            "cuda",
+            "proto",
+        },
+    },
+})
+
 require("lspconfig").emmet_ls.setup({
 	on_attach = on_attach,
 	settings = {

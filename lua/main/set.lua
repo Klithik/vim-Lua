@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>w", ":w<cr>", { desc = "Save the current File" })
-vim.keymap.set("n", "<leader>q", ":qa!<cr>", { desc = "Exit the current file without saving" })
+vim.keymap.set("n", "<leader>q", ":q!<cr>", { desc = "Exit the current file without saving" })
 vim.keymap.set("n", "<leader>e", ":wq<cr>", { desc = "Save and Exit the current File" })
 vim.keymap.set("n", "<c-l>", "<c-w>l ", { desc = "Move cursor to right window" })
 vim.keymap.set("n", "<c-h>", "<c-w>h ", { desc = "Move cursor to left window" })
