@@ -43,21 +43,6 @@ require("lspconfig").pyright.setup({
 	},
 })
 
-require("lspconfig").biome.setup({
-	on_attach = on_attach,
-	settings = {
-		filetypes = {
-			"javascript",
-			"javascriptreact",
-			"json",
-			"jsonc",
-			"typescript",
-			"typescript.tsx",
-			"typescriptreact",
-		},
-	},
-})
-
 require("lspconfig").clangd.setup({
     on_attach = on_attach,
     settings = {
@@ -80,11 +65,43 @@ require("lspconfig").emmet_ls.setup({
 		},
 	},
 })
+
 require("lspconfig").ast_grep.setup({
 	on_attach = on_attach,
 	settings = {
 		filetypes = {
 			"kotlin",
+		},
+	},
+})
+
+require("lspconfig").ts_ls.setup({
+	on_attach = on_attach,
+	settings = {
+        filetypes = {
+        "javascript",
+        "typescript",
+        "vue",
+      },
+	},
+})
+
+--require("lspconfig").denols.setup({
+	--on_attach = on_attach,
+	--settings = {
+		--filetypes = {
+			--"javascript",
+            --"ts"
+		--},
+	--},
+--})
+
+require("lspconfig").astro.setup({
+	on_attach = on_attach,
+	settings = {
+		filetypes = {
+			"astro",
+			"Astro",
 		},
 	},
 })
