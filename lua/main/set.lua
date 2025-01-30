@@ -20,6 +20,7 @@ vim.keymap.set("n", "<leader>lz", ":Lazy<cr>", { desc = "Open Lazy menu" })
 
 -- end resize Window
 
+vim.opt.colorcolumn = "75"
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.cursorline = true
