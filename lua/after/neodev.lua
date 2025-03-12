@@ -66,6 +66,18 @@ require("lspconfig").emmet_ls.setup({
 	},
 })
 
+require("lspconfig").bacon_ls.setup({
+	on_attach = on_attach,
+	settings = {
+        cmd = { "bacon-ls"},
+		filetypes = {
+			"rust",
+		},
+        init_options = {},
+        single_file_support = true,
+	},
+})
+
 require("lspconfig").ast_grep.setup({
 	on_attach = on_attach,
 	settings = {
@@ -96,12 +108,31 @@ require("lspconfig").ts_ls.setup({
 	--},
 --})
 
+require("lspconfig").markdown_oxide.setup({
+	on_attach = on_attach,
+	settings = {
+		filetypes = {
+			"markdown",
+		},
+        cmd = {"markdown_oxide"},
+	},
+})
+
 require("lspconfig").astro.setup({
 	on_attach = on_attach,
 	settings = {
 		filetypes = {
 			"astro",
 			"Astro",
+		},
+	},
+})
+
+require("lspconfig").nil_ls.setup({
+	on_attach = on_attach,
+	settings = {
+		filetypes = {
+			"nil",
 		},
 	},
 })
